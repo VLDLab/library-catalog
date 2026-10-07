@@ -1,8 +1,12 @@
 #include <iostream>
 #include <vector>
+#include <Windows.h>
 #include "Book.h"
 
+
 int main() {
+    SetConsoleCP(1251);
+    SetConsoleOutputCP(1251);
     std::cout << "Варіант 1: Каталог бібліотеки\n\n";
 
     std::vector<Book> books = {
@@ -21,5 +25,6 @@ int main() {
             << '\n';
     }
 
+    std::cin.get();
     return 0;
 }
